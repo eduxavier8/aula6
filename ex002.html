@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>o rato roeu a roupa do rei de roma</p>
+    <p id="trans">a roma roeu o <strong> rato </strong>do rei de ropa</p>
+
+    <script>
+        var nome = window.prompt('qual o seu nome?')
+        document.writeln(`ola <strong>${nome}</strong>, seu nome tem ${nome.length} letras.`)
+        document.writeln(`Seu nome em maiusculas eh ${nome.toUpperCase()}`)
+       var corpo = document.body
+       var p1 = document.getElementById('trans')
+       document.writeln(p1.innerHTML)
+
+    </script>
+</body>
+</html>

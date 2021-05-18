@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de nacionalidade</h1>
+    Verifique sua nacionalidade: <input type="text" name="txt1" id="txt1">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular(){
+            var txt = document.getElementById('txt1')
+            var res = document.getElementById('res')
+            var vel = String(txt.value)
+            var arr = ["brasileiro", "Brasileiro", "br"]
+            if(vel == arr){
+                res.innerHTML = `<p>Voce eh <strong>${vel}</strong></p>`
+
+            }
+            else{
+                res.innerHTML = `<p>Voce nao eh brasileiro, voce eh ${vel}</p>`
+
+            }
+            
+        }
+        
+    </script>
+    
+</body>
+</html>
